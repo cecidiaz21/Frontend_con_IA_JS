@@ -74,6 +74,24 @@ const boxHover = document.getElementById('boxHover');
         boxHover1.classList.toggle('moved');
       });
     });
-// Crea un campo de selección (dropdown) que actualice un párrafo con la opción seleccionada.
-// Implementa un formulario con validación para correos electrónicos.
-// Haz un evento que cambie el texto de un botón al hacer clic en él.
+// 8- Crea un campo de selección (dropdown) que actualice un párrafo con la opción seleccionada.
+const dropdown = document.getElementById('dropdown');
+const selectedOption = document.getElementById('selectedOption');
+
+dropdown.addEventListener('change', function() {
+    selectedOption.textContent = dropdown.value || 'ninguna';
+});
+
+// 9- Implementa un formulario con validación para correos electrónicos.
+const formSubmit = document.getElementById('myForm');
+const email = document.getElementById('email');
+  document.getElementById('formSubmit').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Formulario enviado correctamente');
+      });
+
+// 10- Haz un evento que cambie el texto de un botón al hacer clic en él.
+  const cambiaTexto = document.getElementById('cambiaTexto');
+      cambiaTexto.addEventListener('click', function() {
+        cambiaTexto.textContent = '¡Clickeado!';
+      });

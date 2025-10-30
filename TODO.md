@@ -1,0 +1,2 @@
+- [x] Add select dropdown and paragraph to index.html
+- [x] Add event listener in script.js to update paragraph on dropdown change
